@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECHO | Home</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <!-- font awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/cc5a6a6929.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <!-- the LOGO -->
+          <li>
+            <a href="index.html">
+              <img src="../img/sound-waves.png" alt="website-logo" width="60" />
+            </a>
+          </li>
+          <!-- About us (link) -->
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <!-- IMAGE SONG ARTIST OF CONTROLS -->
+          <div class="img-song-artist">
+            <img src="../img/bg-player.png" alt="bg-player" width="300" />
+            <h3 id="display-song-name">Tum Hi Ho</h3>
+            <p id="display-artist-name" style="width: 300px; height: 50px">
+              Arijit Singh
+            </p>
+          </div>
+
+          <!-- CONTROLS AND SEEKBAR -->
+          <div class="seekbar-controls">
+            <!-- AUDIO ELEMENT -->
+            <audio id="myAudio">
+              <source src="../assets/songs/song (1).mp3" />
+            </audio>
+            <!-- <div id="progress-bar">
+              <input
+                type="range"
+                name="range"
+                id="inside-progress-bar"
+                min="0"
+                max="100"
+              />
+            </div> -->
+            <div class="controls">
+              <span id="backward">
+                <button>
+                  <i class="fa-solid fa-backward-step fa-2x" id="previous"></i>
+                </button>
+              </span>
+              <span id="play-pause">
+                <button onclick="PlayPauseControl()">
+                  <i class="fa-solid fa-play fa-3x" id="inner-play"></i>
+                </button>
+              </span>
+              <span id="forward">
+                <button>
+                  <i class="fa-solid fa-forward-step fa-2x" id="forward"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+
+          <!-- GIF HTML Code -->
+          <div class="playing">
+            <img
+              src="../assets/playing.gif"
+              alt="playing"
+              width="50"
+              id="gif"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- code to be edited - creating list section -->
+      <!-- <div class="song-container">
+        <div class="song-list-head">Songs</div>
+        <div class="list">
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Tum Hi Ho</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Tum Tak</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Tere Jaisa Yaar Kahan</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Duniyaa</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Fakira</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Ghalat Fehmi</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Hawayein</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Kahin Door Jab Din Dhal Jaye</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Kal Ho Na Ho</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+          <div class="songs">
+            <img
+              src="../assets/cover/cover.jpg"
+              alt="cover"
+              class="cover-img"
+              width="20"
+            />
+            <p>
+              <span class="song-name">Kalank - Title Track</span>
+              <span class="timestamp">5:04</span>
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </main>
+    <footer>
+      <div>
+        <p style="color: white">
+          ECHO | &copy; 2022 - <span id="inc-year"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/songList.js"></script>
+  <script src="../js/controls.js"></script>
+  <script src="../js/style.js"></script>
+</html>

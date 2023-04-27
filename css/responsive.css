@@ -1,0 +1,57 @@
+/* 425px */
+@media screen and (max-width: 425px) {
+  header ul {
+    padding: 0 20px;
+  }
+  header li{
+    padding: 0;
+  }
+  .container {
+    padding: 5px;
+    margin: 0;
+  }
+  .song-container{
+    width: 300px;
+  }
+}
+
+
+
+
+/* 768px */
+@media screen and (max-width: 768px) {
+  section{
+    height: auto;
+    flex-direction: column;
+  }
+  .container{
+    margin: 40px 0;
+  }
+  .song-list{
+    margin: 40px 0;
+  }
+}
+
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
